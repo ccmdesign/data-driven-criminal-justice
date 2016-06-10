@@ -7778,17 +7778,14 @@ textarea {
     font-size: 50px; }
   hgroup {
     padding: 0; }
-  .b-surveys-page .b-top-section,
-  #b-homepage .b-top-section {
-    height: 100vh; }
-    .b-surveys-page .b-top-section .e-main-title,
-    #b-homepage .b-top-section .e-main-title {
-      font-size: 2rem;
-      font-weight: 400; }
-    .b-surveys-page .b-top-section .e-tagline,
-    #b-homepage .b-top-section .e-tagline {
-      font-size: 1.1rem;
-      font-weight: 400; }
+  .b-surveys-page .b-top-section .e-main-title,
+  #b-homepage .b-top-section .e-main-title {
+    font-size: 2rem;
+    font-weight: 400; }
+  .b-surveys-page .b-top-section .e-tagline,
+  #b-homepage .b-top-section .e-tagline {
+    font-size: 1.1rem;
+    font-weight: 400; }
   .b-surveys-page .survey-summary {
     margin: 40px 0px;
     padding: 10px; }
