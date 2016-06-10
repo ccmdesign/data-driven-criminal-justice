@@ -7620,6 +7620,13 @@ textarea {
   text-transform: none;
   line-height: 1.1; }
 
+#b-homepage .b-status {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 30px 0 0 0; }
+
 #b-homepage .b-description {
   font-weight: 300;
   font-size: 22px;
