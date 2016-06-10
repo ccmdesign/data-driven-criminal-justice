@@ -7648,6 +7648,9 @@ textarea {
   font-weight: 400 !important;
   text-align: center; }
 
+.e-imagine-header {
+  font-size: 2.2rem !important; }
+
 .b-surveys-page .b-top-section,
 #b-homepage .b-top-section {
   background-size: cover;
