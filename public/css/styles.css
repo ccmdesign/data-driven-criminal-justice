@@ -7571,7 +7571,7 @@ textarea {
   background-color: #68678f;
   color: white; }
 
-.m-dark-teal {
+.m-ddcj-dark-teal {
   background-color: #6291a3;
   color: white; }
 
@@ -7579,11 +7579,11 @@ textarea {
   background-color: #7298af;
   color: white; }
 
-.m-dark-purple {
+.m-ddcj-dark-purple {
   background-color: #656395;
   color: white; }
 
-.m-teal {
+.m-ddcj-teal {
   background-color: #39dfc7;
   color: white; }
 
@@ -7645,6 +7645,9 @@ textarea {
   color: rgba(255, 255, 255, 0.2);
   margin: 30px 0 0 0; }
 
+hgroup {
+  padding: 0; }
+
 .b-surveys-page .b-top-section,
 #b-homepage .b-top-section {
   background-size: cover;
@@ -7686,6 +7689,10 @@ textarea {
     width: auto;
     padding: 5px 8px;
     font-weight: 300; }
+  @media (max-height: 375px) {
+    .b-surveys-page .e-titles,
+    #b-homepage .e-titles {
+      bottom: 5px; } }
 
 .b-surveys-page #download-button {
   bottom: -27px;
