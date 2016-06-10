@@ -13,36 +13,89 @@
     </div>
   </div>
 
+  <div class="b-divider">
+      <h3 style="text-align:center;">Imagine if</h3>
+  </div>
+
+  <!-- #fullwidth -->
+  <div class="b-slider slick m-imagine">
+      <section id="slide-id" class="b-slide m-arnold-foundation">
+          <header>
+          </header>
+          <div class="row e-content">
+              <div class="column large-10 large-centered">
+                  <h3 class="e-question">Imagine if we had data from one individual from the point of arrest to post-release: We could divert more people to alternative programs and tackle recidivism. </h3>
+              </div>
+          </div>
+      </section>
+      <section id="slide-id" class="b-slide m-arnold-foundation">
+          <header>
+          </header>
+          <div class="row e-content">
+              <div class="column large-10 large-centered">
+                  <h3 class="e-question">Imagine if we we had data that could be responsibly shared among different agencies with efficient technological platforms and policies that enable confidential information on substance-abuse and mental disorders to be securely managed and used by criminal justice practitioners we could have a better understanding of who is cycling through multiple systems and predict who is likely to turn into a super-utilizer.</h3>
+              </div>
+          </div>
+      </section>
+      <section id="slide-id" class="b-slide">
+          <header>
+          </header>
+          <div class="row e-content">
+            <div class="column large-10 large-centered">
+                <h3 class="e-question">Imagine if data from multiple jurisdictions we could have a better understanding what programs are working more efficiently, scaling and replicating those interventions that are proving to reduce mass incarceration and lower crime.</h3>
+            </div>
+          </div>
+      </section>
+  </div>
+
   <div class="b-page-section">
     <div class="row">
       <div class="large-10 large-offset-1 columns">
         <p class='b-description'>The GovLab is leading a year-long project, funded by the John and Laura Arnold Foundation, and in close collaboration with the office of the U.S. Chief Data Scientist at the White House, to analyze and document how data flows through the criminal justice system. The aim is to identify policy and legal barriers to effective data sharing among agencies and between agencies and researchers.</p>
-        <p class='b-description'>To date the GovLab is conducting a series of ongoing surveys designed to provide a more complete picture and help us understanding of how criminal justice communities use data and where there is a need for more information and training, as well as a survey of empirical criminal justice researchers. </p>
+        <p class='b-description'>To date the GovLab is conducting a series of ongoing surveys designed to provide a more complete picture and help us understanding of how criminal justice communities use data and where there is a need for more information and training, as well as a survey of empirical criminal justice researchers.</p>
       </div>
     </div>
   </div>
 
 
-{% for  survey in surveys %}
-  <div class="b-page-section m-{{survey.abbreviation}}">
-    <div class="row">
-      <div class="large-5 large-offset-1 columns">
-        <h2>{{survey.title}}</h2>
-        {% if not survey.is_active %}
-          <p class="b-status">Number of Responses: {{survey.qty_responses}}</p>
-        {% else %}
-          <p class="b-status">Status: Ongoing</p>
-        {% endif %}
-        <i class="material-icons m-xl-badge" id="badge-1">{{survey.material_icon}}</i>
-      </div>
-      <div class="large-5 large-offset-1 columns end">
-        <p class='b-description'>{{survey.short_description}}</p>
-        <a class="b-button m-naked" href="{{survey.id}}-{{survey.title | slug}}.html">Find out more<i class="material-icons">arrow_forward</i></a>
+  {% for  survey in surveys %}
+    <div class="b-page-section m-{{survey.abbreviation}}">
+      <div class="row">
+        <div class="large-5 large-offset-1 columns">
+          <h2>{{survey.title}}</h2>
+          {% if not survey.is_active %}
+            <p class="b-status">Number of Responses: {{survey.qty_responses}}</p>
+          {% else %}
+            <p class="b-status">In Process</p>
+          {% endif %}
+          <i class="material-icons m-xl-badge" id="badge-1">{{survey.material_icon}}</i>
+        </div>
+        <div class="large-5 large-offset-1 columns end">
+          <p class='b-description'>{{survey.goal}}</p>
+          <a class="b-button m-naked" href="{{survey.id}}-{{survey.title | slug}}.html">Find out more<i class="material-icons">arrow_forward</i></a>
+        </div>
       </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
 
 
 </div>
+
+<script type="text/javascript">
+  $('.b-slider').slick({
+      arrows: true,
+      draggable: false,
+      swipeToSlide: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      responsive: [
+          {
+              breakpoint: 800,
+              settings: {
+                  draggable: true,
+              }
+          }
+      ]
+  });
+</script>
 {% endblock %}
