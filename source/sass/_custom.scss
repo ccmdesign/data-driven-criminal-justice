@@ -23,6 +23,12 @@ $ddcj-3: #f47156;
   color: white;
 }
 
+.m-white {
+  background-color: white !important;
+  color: black;
+}
+
+
 // .m-ddcj-dark-purple {
 //   background-color: $ddcj-4;
 //   color: white;
@@ -109,14 +115,18 @@ $ddcj-3: #f47156;
     margin: 30px 0 0 0;
   }
 
-  .m-imagine {
-    // display: flex;
-    // flex-direction: column;
-    padding: 0;
-    margin: 0;
+  .b-slider {
+  }
+  .b-slider .slick-arrow:before, .b-slider .slick-arrow:after {
+      color: rgba(0, 0, 0, 0.1);
+      top: 32%;
   }
 
 }
+  .e-imagine {
+    font-weight: 400 !important;
+    text-align: center;
+  }
 
 
 // INDEX AND SURVEYS
