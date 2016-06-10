@@ -18,6 +18,7 @@
   link:
     survey: https://the-govlab.forms.fm/data-driven-criminal-justice-training-survey
   downloads:
+    findings: ddcj-training.pdf
   material_icon: assignment
 
 - title: Toward a New Paradigm
@@ -37,6 +38,7 @@
   link:
     survey: https://govlab.typeform.com/to/qPeday
   downloads:
+    findings: ddcj-toward-a-new-paradigm.pdf
   material_icon: lightbulb_outline
 
 - title: Empirical Criminal Justice Research

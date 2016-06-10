@@ -23,9 +23,9 @@
       </hgroup>
       <div id="download-button">
         {% if not is_active %}
-            <a href="#" class="b-button m-{{abbreviation}}">Download Findings<i class="material-icons m-space">file_download</i></a>
+            <a href="./files/{{downloads.findings}}" target="_blank" class="b-button m-{{abbreviation}}">Download Findings<i class="material-icons m-space">file_download</i></a>
           {% else %}
-            <a href="{{link.survey}}" class="b-button m-{{abbreviation}}">Take the Survey<i class="material-icons">arrow_forward</i></a>
+            <a href="{{link.survey}}" target="_blank" class="b-button m-{{abbreviation}}">Take the Survey<i class="material-icons">arrow_forward</i></a>
         {% endif %}
       </div>
   </div>
