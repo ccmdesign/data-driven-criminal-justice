@@ -7696,6 +7696,31 @@ textarea {
     #b-homepage .e-titles {
       bottom: 5px; } }
 
+.b-surveys-page .b-divider.m-next div h1 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: left; }
+
+.b-surveys-page .b-divider.m-next div h2 {
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  transition: all .4s ease; }
+  .b-surveys-page .b-divider.m-next div h2 .material-icons {
+    vertical-align: -5.5px;
+    color: rgba(255, 255, 255, 0.3); }
+
+.b-surveys-page .b-divider.m-next div a:hover {
+  text-decoration: none; }
+
+.b-surveys-page .b-divider.m-next div a:hover h2 {
+  color: white;
+  transition: all .4s ease; }
+
 .b-surveys-page #download-button {
   bottom: -27px;
   position: absolute;
