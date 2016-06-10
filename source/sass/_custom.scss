@@ -1,37 +1,37 @@
 // DDCJ COLORS
-$ddcj-1: #68678f; 
-$ddcj-2: #6291a3; 
-$ddcj-3: #7298af;
-$ddcj-4: #656395;
-$ddcj-5: #39dfc7;
+$ddcj-1: #5ab5bf; 
+$ddcj-2: #404b59; 
+$ddcj-3: #f47156;
+// $ddcj-4: #656395;
+// $ddcj-5: #39dfc7;
 
 
 // BACKGROUND COLORS
 
-.m-ddcj-purple {
+.m-criminal-justice {
   background-color: $ddcj-1;
   color: white;
 }
 
-.m-ddcj-dark-teal {
+.m-arnold-foundation {
   background-color: $ddcj-2;
   color: white;
 }
 
-.m-ddcj-blue {
+.m-empirical-criminal-justice {
   background-color: $ddcj-3;
   color: white;
 }
 
-.m-ddcj-dark-purple {
-  background-color: $ddcj-4;
-  color: white;
-}
+// .m-ddcj-dark-purple {
+//   background-color: $ddcj-4;
+//   color: white;
+// }
 
-.m-ddcj-teal {
-  background-color: $ddcj-5;
-  color: white;
-}
+// .m-ddcj-teal {
+//   background-color: $ddcj-5;
+//   color: white;
+// }
 
 // BASE
 
@@ -175,8 +175,14 @@ hgroup {
     position: absolute;
     text-align: center;
     width: 100%;
-
-    a { box-shadow: 0 0 5px $gray-20; }
+    a { 
+      box-shadow: 0 0 5px $gray-20; 
+      &:hover {
+        text-decoration: none;
+        transition: all .4s ease;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
     .material-icons {
         font-size: 24px;
         line-height: 24px;
