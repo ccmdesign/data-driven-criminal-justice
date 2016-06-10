@@ -6,6 +6,7 @@
   date_start: October 21, 2015
   date_end: October 24, 2015
   qty_responses: 34
+  abbreviation: criminal-justice 
   goal: Sent to members of Criminal Justice Coordinating Councils (CJCCs) interested in accelerating justice system data sharing.
   objectives:
     - Understand the role of data-driven decision making in the criminal justice system today
@@ -22,6 +23,7 @@
   date_start: September 9, 2015
   date_end: October 21, 2015
   qty_responses: 63
+  abbreviation: arnold-foundation
   goal: Sent to diverse members from criminal justice agencies (law enforcement, courts, corrections and policy makers) nationwide.
   objectives:
     - Identify the projects and problems people are working on where data might help.
@@ -38,6 +40,7 @@
   date_start: 
   date_end:
   qty_responses: 
+  abbreviation: empirical-criminal-justice
   goal: Sent to over 100 empirical criminal justice researchers from across the country.  
   objectives:
     - How empirical criminal justice researchers use criminal justice data 

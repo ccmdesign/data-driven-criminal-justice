@@ -7567,24 +7567,16 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.m-ddcj-purple {
-  background-color: #68678f;
+.m-criminal-justice {
+  background-color: #5ab5bf;
   color: white; }
 
-.m-ddcj-dark-teal {
-  background-color: #6291a3;
+.m-arnold-foundation {
+  background-color: #404b59;
   color: white; }
 
-.m-ddcj-blue {
-  background-color: #7298af;
-  color: white; }
-
-.m-ddcj-dark-purple {
-  background-color: #656395;
-  color: white; }
-
-.m-ddcj-teal {
-  background-color: #39dfc7;
+.m-empirical-criminal-justice {
+  background-color: #f47156;
   color: white; }
 
 .b-top-nav.m-transparent {
@@ -7695,6 +7687,10 @@ hgroup {
   width: 100%; }
   .b-surveys-page #download-button a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+    .b-surveys-page #download-button a:hover {
+      text-decoration: none;
+      transition: all .4s ease;
+      background-color: rgba(0, 0, 0, 0.6); }
   .b-surveys-page #download-button .material-icons {
     font-size: 24px;
     line-height: 24px; }
