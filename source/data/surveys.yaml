@@ -7,7 +7,7 @@
   date_end: October 24, 2015
   qty_responses: 34
   abbreviation: criminal-justice 
-  goal: Sent to members of Criminal Justice Coordinating Councils (CJCCs) interested in accelerating justice system data sharing.
+  short_description: Sent to members of Criminal Justice Coordinating Councils (CJCCs) interested in accelerating justice system data sharing.
   objectives:
     - Understand the role of data-driven decision making in the criminal justice system today
     - Map the availability of and access to data for reform
@@ -17,6 +17,7 @@
   link:
     survey: https://govlab.typeform.com/to/qPeday
   downloads:
+  material_icon: account_balance
 
 - title: The Arnold Foundation Skills Survey
   image: ddcj-2.jpg
@@ -24,7 +25,7 @@
   date_end: October 21, 2015
   qty_responses: 63
   abbreviation: arnold-foundation
-  goal: Sent to diverse members from criminal justice agencies (law enforcement, courts, corrections and policy makers) nationwide.
+  short_description: Sent to diverse members from criminal justice agencies (law enforcement, courts, corrections and policy makers) nationwide.
   objectives:
     - Identify the projects and problems people are working on where data might help.
     - Know how much practitioners know about innovation and human-centered design
@@ -34,6 +35,7 @@
   link:
     survey: https://the-govlab.forms.fm/data-driven-criminal-justice-training-survey
   downloads:
+  material_icon: person_pin
 
 - title: Empirical Criminal Justice Researcher Survey
   image: ddcj-3.jpg
@@ -41,7 +43,7 @@
   date_end:
   qty_responses: 
   abbreviation: empirical-criminal-justice
-  goal: Sent to over 100 empirical criminal justice researchers from across the country.  
+  short_description: Sent to over 100 empirical criminal justice researchers from across the country.  
   objectives:
     - How empirical criminal justice researchers use criminal justice data 
     - How empirical criminal justice researchers access data
@@ -52,3 +54,4 @@
   link:
     survey: https://nyu.qualtrics.com/jfe/form/SV_4MCNBPkJ7KVR3cp
   downloads:
+  material_icon: trending_up
