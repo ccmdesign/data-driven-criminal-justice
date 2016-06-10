@@ -7571,7 +7571,7 @@ textarea {
   background-color: #5ab5bf;
   color: white; }
 
-.m-arnold-foundation {
+.m-new-paradigm {
   background-color: #404b59;
   color: white; }
 
@@ -7638,8 +7638,9 @@ textarea {
   color: rgba(255, 255, 255, 0.2);
   margin: 30px 0 0 0; }
 
-hgroup {
-  padding: 0; }
+#b-homepage .m-imagine {
+  padding: 0;
+  margin: 0; }
 
 .b-surveys-page .b-top-section,
 #b-homepage .b-top-section {
