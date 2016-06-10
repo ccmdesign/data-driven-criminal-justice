@@ -19,13 +19,13 @@
       <div class="e-shade"></div>
       <hgroup class="e-titles">
           <h1 class="e-main-title">{{title}}</h1>
-          <h3 class="e-tagline">{{goal}}</h3>
+          <h3 class="e-tagline">{{subtitle}}</h3>
       </hgroup>
       <div id="download-button">
         {% if not is_active %}
-            <a href="#" class="b-button m-{{abbreviation}}">Download the Slides<i class="material-icons m-space">file_download</i></a>
+            <a href="./files/{{downloads.findings}}" target="_blank" class="b-button m-{{abbreviation}}">Download Findings<i class="material-icons m-space">file_download</i></a>
           {% else %}
-            <a href="{{link.survey}}" class="b-button m-{{abbreviation}}">Take the Survey<i class="material-icons">arrow_forward</i></a>
+            <a href="{{link.survey}}" target="_blank" class="b-button m-{{abbreviation}}">Take the Survey<i class="material-icons">arrow_forward</i></a>
         {% endif %}
       </div>
   </div>
@@ -60,7 +60,11 @@
         <h3 class="e-description-title">Key Findings</h3>
       </div>
       <div class="large-8 columns end">
+        {% if is_active %}
+          <p class="e-description">Forthcoming</p>
+        {% else %}
         <p class="e-description">{{key_findings}}</p>
+        {% endif %}
       </div>
     </div>
 
@@ -69,7 +73,11 @@
         <h3 class="e-description-title">Dates</h3>
       </div>
       <div class="large-8 columns end">
-        <p class="e-description">{{date_start}} - {{date_end}}</p>
+        {% if is_active %}
+          <p class="e-description">In Process</p>
+        {% else %}
+          <p class="e-description">{{date_start}} - {{date_end}}</p>
+        {% endif %}
       </div>
     </div>
 
@@ -78,29 +86,31 @@
         <h3 class="e-description-title">Number of Responses</h3>
       </div>
       <div class="large-8 columns end">
+        {% if is_active %}
+          <p class="e-description">In Process</p>
+        {% else %}
         <p class="e-description">{{qty_responses}}</p>
+        {% endif %}
       </div>
     </div>
-  
   </div>
 
+<div class="b-divider m-{{abbreviation}} m-next">
+
+  <div class="row"> 
+    <div class="large-6 large-offset-6 columns">
+      <h1>See the Survey</h1>
+      <a href="{{link.survey}}" target="_blank">
+        <h2>{{title}}<i class="material-icons">chevron_right</i></h2>
+      </a>
+      </div>
+  </div>
+</div>
 
 
 
 
 
-
-{# 
-  <h1>{{title}}</h1>
-  <p>{{image}}</p>
-  <p>{{date_start}}</p>
-  <p>{{date_end}}</p>
-  <p>{{qty_responses}}</p>
-  <p>{{goal}}</p>
-  <p>{{objectives}}</p>
-  <p>{{key_findings}}</p>
-  <p>{{link.survey}}</p>
-  <p>{{download}}</p> #}
 </div>
 {% endblock %}
 

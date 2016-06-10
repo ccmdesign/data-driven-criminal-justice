@@ -7571,13 +7571,17 @@ textarea {
   background-color: #5ab5bf;
   color: white; }
 
-.m-arnold-foundation {
+.m-new-paradigm {
   background-color: #404b59;
   color: white; }
 
 .m-empirical-criminal-justice {
   background-color: #f47156;
   color: white; }
+
+.m-white {
+  background-color: white !important;
+  color: black; }
 
 .b-top-nav.m-transparent {
   background-color: rgba(0, 0, 0, 0.3);
@@ -7620,6 +7624,13 @@ textarea {
   text-transform: none;
   line-height: 1.1; }
 
+#b-homepage .b-status {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 30px 0 0 0; }
+
 #b-homepage .b-description {
   font-weight: 300;
   font-size: 22px;
@@ -7631,8 +7642,13 @@ textarea {
   color: rgba(255, 255, 255, 0.2);
   margin: 30px 0 0 0; }
 
-hgroup {
-  padding: 0; }
+#b-homepage .b-slider .slick-arrow:before, #b-homepage .b-slider .slick-arrow:after {
+  color: rgba(0, 0, 0, 0.1);
+  top: 32%; }
+
+.e-imagine {
+  font-weight: 400 !important;
+  text-align: center; }
 
 .b-surveys-page .b-top-section,
 #b-homepage .b-top-section {
@@ -7679,6 +7695,31 @@ hgroup {
     .b-surveys-page .e-titles,
     #b-homepage .e-titles {
       bottom: 5px; } }
+
+.b-surveys-page .b-divider.m-next div h1 {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.3);
+  text-align: left; }
+
+.b-surveys-page .b-divider.m-next div h2 {
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  transition: all .4s ease; }
+  .b-surveys-page .b-divider.m-next div h2 .material-icons {
+    vertical-align: -5.5px;
+    color: rgba(255, 255, 255, 0.3); }
+
+.b-surveys-page .b-divider.m-next div a:hover {
+  text-decoration: none; }
+
+.b-surveys-page .b-divider.m-next div a:hover h2 {
+  color: white;
+  transition: all .4s ease; }
 
 .b-surveys-page #download-button {
   bottom: -27px;
@@ -7737,17 +7778,14 @@ hgroup {
     font-size: 50px; }
   hgroup {
     padding: 0; }
-  .b-surveys-page .b-top-section,
-  #b-homepage .b-top-section {
-    height: 100vh; }
-    .b-surveys-page .b-top-section .e-main-title,
-    #b-homepage .b-top-section .e-main-title {
-      font-size: 2rem;
-      font-weight: 400; }
-    .b-surveys-page .b-top-section .e-tagline,
-    #b-homepage .b-top-section .e-tagline {
-      font-size: 1.1rem;
-      font-weight: 400; }
+  .b-surveys-page .b-top-section .e-main-title,
+  #b-homepage .b-top-section .e-main-title {
+    font-size: 2rem;
+    font-weight: 400; }
+  .b-surveys-page .b-top-section .e-tagline,
+  #b-homepage .b-top-section .e-tagline {
+    font-size: 1.1rem;
+    font-weight: 400; }
   .b-surveys-page .survey-summary {
     margin: 40px 0px;
     padding: 10px; }
