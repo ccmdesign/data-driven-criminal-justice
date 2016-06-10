@@ -168,6 +168,13 @@ function generateVinyl(basePath, dataPath, fPrefix, fSuffix, dSuffix) {
 
 // define gulp tasks ///////////////////////////////////
 
+gulp.task('files', function() {
+  return gulp.src('source/files/**/*')
+  .pipe(plumber())
+  .pipe(gulp.dest('public/files'))
+  .pipe(bs.stream());
+});
+
 gulp.task('sass', function() {
   return gulp.src('source/sass/styles.scss')
   .pipe(sass().on('error', sass.logError))
@@ -309,7 +316,7 @@ gulp.task('design', ['bs', 'sass', 'nunjucksDesign', 'js', 'img'], function (){
 });
 
 
-gulp.task('default', ['bs', 'build'], function (){
+gulp.task('default', ['bs', 'build', 'files'], function (){
   gulp.watch('source/sass/**/*.scss', ['sass']);
   gulp.watch('source/templates/**/*.html', ['nunjucks']);
   gulp.watch('source/img/**/*', ['img']);
