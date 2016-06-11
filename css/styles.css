@@ -7649,6 +7649,7 @@ textarea {
   text-align: center; }
 
 .e-imagine-header {
+  text-align: center;
   font-size: 2.2rem !important; }
 
 .b-surveys-page .b-top-section,
@@ -7754,6 +7755,25 @@ textarea {
   .b-surveys-page .survey-summary .e-description {
     font-size: 1.2rem;
     font-weight: 300; }
+
+.slick-dots {
+  text-align: center; }
+  .slick-dots li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px; }
+    .slick-dots li button {
+      font-size: 0;
+      color: transparent; }
+    .slick-dots li::after {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12;
+      color: rgba(0, 0, 0, 0.2);
+      content: "radio_button_unchecked"; }
+    .slick-dots li.slick-active::after {
+      content: "lens"; }
 
 @media (max-width: 500px) {
   .b-top-nav.m-transparent .e-social-media .e-nav-item {
