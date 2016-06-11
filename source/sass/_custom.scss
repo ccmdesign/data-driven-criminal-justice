@@ -131,7 +131,6 @@ $ddcj-3: #f47156;
     font-size: 2.2rem !important;
   }
 
-
 // INDEX AND SURVEYS
 .b-surveys-page,
 #b-homepage {
@@ -254,6 +253,30 @@ $ddcj-3: #f47156;
       font-weight: 300;
     }
 
+  }
+}
+
+.slick-dots {
+  text-align: center;
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    button {
+      font-size: 0;
+      color: transparent;
+    }
+    &::after {
+      font-family: 'Material Icons';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12;
+      color: $gray-20;
+      content: "radio_button_unchecked";
+    }
+    &.slick-active::after {
+      content: "lens";
+    }
   }
 }
 
