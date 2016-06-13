@@ -7871,3 +7871,13 @@ textarea {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15); }
   .b-main-menu::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(0, 0, 0, 0.15); }
+
+.b-modal form {
+  margin: 0 auto;
+  width: 80%; }
+
+.js-close-modal,
+#close-modal,
+a {
+  box-shadow: none !important;
+  color: black; }

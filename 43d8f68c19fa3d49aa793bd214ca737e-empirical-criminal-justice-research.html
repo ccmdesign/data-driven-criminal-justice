@@ -70,7 +70,28 @@
       </hgroup>
       <div id="download-button">
         
-            <a href="https://nyu.qualtrics.com/jfe/form/SV_4MCNBPkJ7KVR3cp" target="_blank" class="b-button m-empirical-criminal-justice">Take the Survey<i class="material-icons">arrow_forward</i></a>
+            <a href="#" class="b-button m-empirical-criminal-justice js-open-modal">Take the Survey<i class="material-icons">arrow_forward</i></a>
+          <!-- modal window -->
+            <div class="b-modal">
+              <div class="e-content m-purple" style="color:black;">
+                <h2>Request an Invite</h2>
+                <form action="//formspree.io/info@thegovlab.org" method="POST" class="b-form">
+                  <div class="row">
+                    <div class="large-12 large-centered columns">
+                      <input type="text" id="first-name" placeholder="First Name" name="first-name"/>
+                      <input type="text" id="last-name" placeholder="Last Name" name="last-name"/>
+                      <input type="email" id="mail" placeholder="Email" name="email" required/>
+                      <input type="text" id="title" placeholder="Title" name="title" required/>
+                      <input type="text" id="affiliation" placeholder="Affiliation" name="affiliation" required/>
+                      <input type="hidden" name="_next" value="./confirmation.html" />
+                      <input type="text" name="_gotcha" style="display:none" />
+                      <input type="submit" value="Send">
+                      <a id="close-modal" class="b-button js-close-modal" href="#">Close</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
         
       </div>
   </div>
@@ -148,9 +169,11 @@
   <div class="row"> 
     <div class="large-6 large-offset-6 columns">
       <h1>See the Survey</h1>
-      <a href="https://nyu.qualtrics.com/jfe/form/SV_4MCNBPkJ7KVR3cp" target="_blank">
+      
+      <a href="#" class="js-open-modal">
         <h2>Empirical Criminal Justice Research<i class="material-icons">chevron_right</i></h2>
       </a>
+      
       </div>
   </div>
 </div>
