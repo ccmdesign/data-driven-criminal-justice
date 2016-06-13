@@ -7876,8 +7876,6 @@ textarea {
   margin: 0 auto;
   width: 80%; }
 
-.js-close-modal,
-#close-modal,
-a {
+#close-modal {
   box-shadow: none !important;
   color: black; }
