@@ -29,3 +29,17 @@
     background: $gray-15; 
   }
 }
+
+// MODAL
+.b-modal {
+  form {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+#close-modal {
+  box-shadow: none !important;
+  color: black;
+
+}
