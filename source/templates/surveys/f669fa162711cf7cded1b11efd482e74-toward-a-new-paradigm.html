@@ -19,7 +19,6 @@
       <div class="e-shade"></div>
       <hgroup class="e-titles">
           <h1 class="e-main-title">{{title}}</h1>
-          <h3 class="e-tagline">{{subtitle}}</h3>
       </hgroup>
       <div id="download-button">
         {% if not is_active %}
@@ -35,10 +34,10 @@
 
     <div class="row">
       <div class="large-3 columns">
-        <h3 class="e-description-title">Goal</h3>
+        <h3 class="e-description-title">Description</h3>
       </div>
       <div class="large-8 columns end">
-        <p class="e-description">{{goal}}</p>
+        <p class="e-description">{{description}}</p>
       </div>
     </div>
 
@@ -55,6 +54,17 @@
       </div>
     </div>
 
+    {% if initial_results %}
+      <div class="row">
+        <div class="large-3 columns">
+          <h3 class="e-description-title">Initial Results</h3>
+        </div>
+        <div class="large-8 columns end">
+          <p class="e-description">{{initial_results}}</p>
+        </div>
+      </div>
+    {% endif %}
+
     <div class="row">
       <div class="large-3 columns">
         <h3 class="e-description-title">Key Findings</h3>
@@ -70,7 +80,7 @@
 
     <div class="row">
       <div class="large-3 columns">
-        <h3 class="e-description-title">Dates</h3>
+        <h3 class="e-description-title">First Conducted: </h3>
       </div>
       <div class="large-8 columns end">
         {% if is_active %}
