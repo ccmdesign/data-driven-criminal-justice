@@ -24,7 +24,28 @@
         {% if not is_active %}
             <a href="./files/{{downloads.findings}}" target="_blank" class="b-button m-{{abbreviation}}">Download Findings<i class="material-icons m-space">file_download</i></a>
           {% else %}
-            <a href="{{link.survey}}" target="_blank" class="b-button m-{{abbreviation}}">Take the Survey<i class="material-icons">arrow_forward</i></a>
+            <a href="#" class="b-button m-{{abbreviation}} js-open-modal">Take the Survey<i class="material-icons">arrow_forward</i></a>
+          <!-- modal window -->
+            <div class="b-modal">
+              <div class="e-content m-purple" style="color:black;">
+                <h2>Request an Invite</h2>
+                <form action="//formspree.io/info@thegovlab.org" method="POST" class="b-form">
+                  <div class="row">
+                    <div class="large-12 large-centered columns">
+                      <input type="text" id="first-name" placeholder="First Name" name="first-name"/>
+                      <input type="text" id="last-name" placeholder="Last Name" name="last-name"/>
+                      <input type="email" id="mail" placeholder="Email" name="email" required/>
+                      <input type="text" id="title" placeholder="Title" name="title" required/>
+                      <input type="text" id="affiliation" placeholder="Affiliation" name="affiliation" required/>
+                      <input type="hidden" name="_next" value="./confirmation.html" />
+                      <input type="text" name="_gotcha" style="display:none" />
+                      <input type="submit" value="Send">
+                      <a id="close-modal" class="b-button js-close-modal" href="#">Close</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
         {% endif %}
       </div>
   </div>
@@ -111,9 +132,15 @@
   <div class="row"> 
     <div class="large-6 large-offset-6 columns">
       <h1>See the Survey</h1>
+      {% if not is_active %}
       <a href="{{link.survey}}" target="_blank">
         <h2>{{title}}<i class="material-icons">chevron_right</i></h2>
       </a>
+      {% else %}
+      <a href="#" class="js-open-modal">
+        <h2>{{title}}<i class="material-icons">chevron_right</i></h2>
+      </a>
+      {% endif %}
       </div>
   </div>
 </div>
