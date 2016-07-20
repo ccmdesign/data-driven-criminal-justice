@@ -168,6 +168,12 @@ function generateVinyl(basePath, dataPath, fPrefix, fSuffix, dSuffix) {
 
 // define gulp tasks ///////////////////////////////////
 
+gulp.task('cname', function () {
+  return gulp.src('source/templates/CNAME')
+  .pipe(gulp.dest('public'));
+});
+
+
 gulp.task('files', function() {
   return gulp.src('source/files/**/*')
   .pipe(plumber())
@@ -282,7 +288,7 @@ gulp.task('nunjucks', ['generateTemplates'], function() {
   .pipe(gulp.dest('public'));
 });
 
-var buildTasks = ['sass', 'js', 'img', 'nunjucks', 'libCss'];
+var buildTasks = ['sass', 'js', 'img', 'nunjucks', 'libCss', 'cname'];
 gulp.task('build', buildTasks, function () {
   util.log(util.colors.magenta('****'), 'Running build tasks:', buildTasks, util.colors.magenta('****'));
 })
